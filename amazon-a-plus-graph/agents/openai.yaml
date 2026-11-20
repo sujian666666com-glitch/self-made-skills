@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon A+ 长图生成"
+  short_description: "按品类自适应生成 Amazon A+ 标准 12 模块长图，兼容简化 8 段、通用 7 段与单模块 A+。"
+  default_prompt: "根据这个商品图与商品信息，按 Amazon A+ 12 模块标准长图流程：先做 Minimum Input Resolution Gate、Buyer Reason Card、Conversion Driver 诊断、English Baseline、Campaign Style Lock，再生成白底图与 detail-plan，最后串行递归生成 750px 宽 Amazon A+ 长图。"

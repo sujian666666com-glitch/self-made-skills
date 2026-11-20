@@ -1,0 +1,48 @@
+{
+  "product_name": "示例产品",
+  "product_images": ["./input/product.jpg"],
+  "category": "Kitchen & Dining",
+  "selling_points": ["BPA-free", "Airtight seal", "Stackable", "Dishwasher safe"],
+  "tasks": [
+    {
+      "type": "hero",
+      "prefix": "01_hero",
+      "prompt": "Professional Amazon product hero shot, pure white background RGB(255,255,255), kitchen food storage container, minimalist product photography, product fills 85%+ of frame, studio lighting, clean, no text, no logo, no props, no border"
+    },
+    {
+      "type": "infographic",
+      "prefix": "02_infographic",
+      "prompt": "Amazon product infographic, kitchen food storage container, visually highlight features: BPA-free, Airtight seal, Stackable, clean modern design with callout arrows and labels, light gradient background"
+    },
+    {
+      "type": "lifestyle",
+      "prefix": "03_lifestyle",
+      "prompt": "Amazon lifestyle product photo, food storage containers in a modern kitchen scene, natural lighting, warm atmosphere, product clearly visible, high-quality photography"
+    },
+    {
+      "type": "in_use",
+      "prefix": "04_in_use",
+      "prompt": "Amazon product in-use photo, food storage container being held and operated by hands in a kitchen, showing real interaction, natural indoor lighting"
+    },
+    {
+      "type": "closeup",
+      "prefix": "05_closeup",
+      "prompt": "Amazon product close-up detail shot, food storage container lid seal mechanism, extreme detail showing material texture and airtight gasket, macro photography, shallow depth of field"
+    },
+    {
+      "type": "dimension",
+      "prefix": "06_dimension",
+      "prompt": "Amazon product dimension reference image, food storage containers with measurement annotations, clean technical illustration style, light background"
+    },
+    {
+      "type": "comparison",
+      "prefix": "07_comparison",
+      "prompt": "Amazon product comparison image, premium food storage containers alongside generic alternative, structured side-by-side comparison, highlight advantages: BPA-free, airtight seal, stackable, clean modern design"
+    },
+    {
+      "type": "packaging",
+      "prefix": "08_packaging",
+      "prompt": "Amazon product packaging display, food storage containers set with all pieces neatly arranged, premium unboxing feel, clean flat-lay composition, light neutral background"
+    }
+  ]
+}

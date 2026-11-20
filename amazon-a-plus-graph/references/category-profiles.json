@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "description": "Amazon A+ 长图品类视觉系统。每个品类提供机器可读的色板、场景、光线、视觉表现、英文标题方向、必做与可选模块。模块号对应 amazon-aplus-style-system.md Part A 的 12 模块。",
+  "categories": {
+    "tech": {
+      "label_zh": "数码 / 电子",
+      "keywords": ["minimal tech", "futuristic", "precise", "clean workspace", "apple-like premium"],
+      "palette": ["#f5f6f8", "#1f2933", "#0f1c2e", "#3b6cf6"],
+      "accent": "#39ff8a",
+      "temperature": "cool",
+      "lighting": "neutral-cool studio lighting with crisp specular highlights and subtle light trails",
+      "scenes": ["minimal desk setup", "MacBook workspace", "RGB gaming desk", "remote work", "study", "travel-friendly carry"],
+      "ornaments": ["thin tech lines", "translucent info cards", "soft cool gradients", "micro detail shots"],
+      "headline_directions": [
+        "Precision Meets Control",
+        "Built for Every Setup",
+        "Faster Response, Smoother Workflow",
+        "Designed for Work and Play"
+      ],
+      "must_do_modules": [1, 2, 4, 6, 7, 9, 10, 12],
+      "optional_modules": [5, 8, 11],
+      "avoid": "国产参数堆叠页；密集小字；冷艳到失温"
+    },
+    "food": {
+      "label_zh": "食品 / 饮料",
+      "keywords": ["fresh", "natural", "healthy", "clean food branding", "warm lifestyle"],
+      "palette": ["#fbf6ec", "#e7c66a", "#9bc18b", "#cfe6f1"],
+      "accent": "#f29455",
+      "temperature": "warm",
+      "lighting": "soft natural sunlight, warm tabletop bounce, gentle shadows",
+      "scenes": ["breakfast table", "kitchen counter", "office light bite", "outdoor picnic", "family share", "origin farmland"],
+      "ornaments": ["ingredient splash", "pour-in-glass action", "wooden boards", "linen cloth", "ingredient cards"],
+      "headline_directions": [
+        "Naturally Fresh, Every Day",
+        "Start Your Morning Better",
+        "Simple Ingredients, Real Taste",
+        "Clean Nutrition for Daily Life"
+      ],
+      "must_do_modules": [1, 4, 2, 6, 5, 9, 10, 12],
+      "optional_modules": [8, 11, 7],
+      "avoid": "过度科技感；冷艳金属背景；让食物失去食欲"
+    },
+    "wellness": {
+      "label_zh": "保健 / 营养",
+      "keywords": ["scientific", "premium health", "trustworthy", "clean wellness", "professional"],
+      "palette": ["#0b2a4a", "#1e6f9a", "#ffffff", "#c8a96a"],
+      "accent": "#5fb7c4",
+      "temperature": "cool",
+      "lighting": "clean clinical lighting blended with soft natural daylight",
+      "scenes": ["healthy lifestyle", "ocean / nature ingredient origin", "fitness / outdoor", "morning supplementation", "light lab elements"],
+      "ornaments": ["capsule macros", "ingredient origin imagery", "scientific iconography", "structure diagrams", "before-after vitality"],
+      "headline_directions": [
+        "Daily Support for Better Wellness",
+        "Backed by Science, Made for Life",
+        "Clean Nutrition You Can Trust",
+        "Strength & Energy with Every Serving"
+      ],
+      "must_do_modules": [1, 2, 4, 5, 6, 9, 12],
+      "optional_modules": [7, 11],
+      "avoid": "医疗化夸大；治疗疾病的措辞；伪造认证标识"
+    },
+    "pet": {
+      "label_zh": "宠物用品",
+      "keywords": ["warm home", "trustworthy", "pet friendly", "soft premium", "modern living"],
+      "palette": ["#faf5ec", "#c9a17a", "#7c7468", "#d4cfc4"],
+      "accent": "#9db58a",
+      "temperature": "warm",
+      "lighting": "warm natural light with gentle window shadows and pet-safe softness",
+      "scenes": ["modern living room", "pet feeding moment", "owner-away peace of mind", "cat-dog interaction", "small-home automation"],
+      "ornaments": ["fabric textures", "wood furniture", "soft rugs", "function cutaway", "easy-clean comparison"],
+      "headline_directions": [
+        "Designed for Modern Pet Care",
+        "Keep Them Fed, Even When You're Away",
+        "Smart Care for Happy Pets",
+        "Cleaner, Easier, More Reliable"
+      ],
+      "must_do_modules": [1, 6, 2, 4, 9, 11, 12],
+      "optional_modules": [8, 5],
+      "avoid": "冷酷工业感；让宠物显得不安全或人工"
+    },
+    "home": {
+      "label_zh": "家居 / 生活",
+      "keywords": ["modern home", "clean living", "soft minimal", "functional beauty", "everyday comfort"],
+      "palette": ["#f7f3ee", "#dcd6cb", "#a89e8e", "#d6e3df"],
+      "accent": "#caa46a",
+      "temperature": "neutral",
+      "lighting": "soft daylight from window with clean ambient shadows",
+      "scenes": ["living room", "kitchen", "bathroom", "bedroom", "before/after storage", "daily family use"],
+      "ornaments": ["before/after splits", "tidy organization", "step-by-step layouts", "material macros", "size annotations"],
+      "headline_directions": [
+        "Make Everyday Living Easier",
+        "Simple Design, Better Home",
+        "Clean Space, Comfortable Life",
+        "Built for Daily Use"
+      ],
+      "must_do_modules": [1, 2, 4, 6, 5, 8, 9, 12],
+      "optional_modules": [7, 11],
+      "avoid": "杂乱背景；过度饱和色彩"
+    },
+    "beauty": {
+      "label_zh": "美妆 / 个护",
+      "keywords": ["elegant", "soft beauty", "clean skincare", "refined", "premium self-care"],
+      "palette": ["#fbf3ee", "#f0c6cc", "#d4af7a", "#dfe7f0"],
+      "accent": "#bda1c9",
+      "temperature": "warm",
+      "lighting": "soft beauty lighting with gentle highlights and pearl shimmer",
+      "scenes": ["bathroom vanity", "dressing table", "skin macro", "fragrance lifestyle", "natural window light", "gift box"],
+      "ornaments": ["water droplets", "foam textures", "serum macros", "skin touch shots", "ingredient visualization", "before/after glow"],
+      "headline_directions": [
+        "Glow Naturally Every Day",
+        "Clean Care for Beautiful Skin",
+        "A Softer Ritual for Self-care",
+        "Refined Beauty, Simple Routine"
+      ],
+      "must_do_modules": [1, 4, 5, 6, 7, 10, 12],
+      "optional_modules": [11, 8],
+      "avoid": "廉价粉色堆砌；密集小字；卡通化插画"
+    },
+    "outdoor": {
+      "label_zh": "户外 / 运动",
+      "keywords": ["durable", "active", "outdoor premium", "strong", "adventure ready"],
+      "palette": ["#1f2a1c", "#c9a778", "#0e0e0e", "#3b6f5b"],
+      "accent": "#e36a2a",
+      "temperature": "warm",
+      "lighting": "natural outdoor lighting with strong directional sun and dramatic shadows",
+      "scenes": ["mountain", "campsite", "seaside", "gym", "running track", "road trip", "car camping"],
+      "ornaments": ["dirt textures", "water splashes", "rugged metal", "performance icons", "before/after durability"],
+      "headline_directions": [
+        "Built for Every Adventure",
+        "Ready for Outdoor Life",
+        "Strong Gear for Active Days",
+        "Durable Design, Reliable Performance"
+      ],
+      "must_do_modules": [1, 6, 4, 7, 9, 10, 12],
+      "optional_modules": [8, 11],
+      "avoid": "脏乱画面；廉价工业感"
+    },
+    "baby": {
+      "label_zh": "母婴 / 儿童",
+      "keywords": ["safe", "gentle", "soft premium", "family trust", "clean care"],
+      "palette": ["#fdf7e6", "#f6d0c8", "#c9e3df", "#e3dbc7"],
+      "accent": "#a8c389",
+      "temperature": "warm",
+      "lighting": "soft warm daylight with gentle, parent-friendly shadows",
+      "scenes": ["family parenting", "baby use", "parent companionship", "kid room", "dining table", "outdoor carry"],
+      "ornaments": ["rounded cards", "gentle iconography", "fabric and wood textures", "step-by-step usage", "easy-clean visuals"],
+      "headline_directions": [
+        "Gentle Care for Little Ones",
+        "Safe Design for Everyday Use",
+        "Made for Growing Families",
+        "Simple, Safe, Parent-approved"
+      ],
+      "must_do_modules": [1, 4, 5, 6, 11, 9, 12],
+      "optional_modules": [2, 8],
+      "avoid": "过度可爱化；饱和色块；夸张承诺"
+    },
+    "apparel": {
+      "label_zh": "服饰 / 配饰",
+      "keywords": ["lifestyle fashion", "clean premium", "comfortable", "stylish", "everyday wear"],
+      "palette": ["#1a1a1a", "#f4f1ec", "#bfa68a", "#2c3e63"],
+      "accent": "#c9a25b",
+      "temperature": "neutral",
+      "lighting": "editorial fashion lighting with soft fill and natural shadow",
+      "scenes": ["street style", "commute", "travel", "fitness", "home", "gift moment", "outfit pairing"],
+      "ornaments": ["fabric macros", "size guides", "multi-angle shots", "outfit stacks", "lifestyle vignettes"],
+      "headline_directions": [
+        "Designed for Everyday Style",
+        "Comfort That Moves With You",
+        "Simple Look, Premium Feel",
+        "Made for Work, Travel and Life"
+      ],
+      "must_do_modules": [1, 6, 4, 9, 10, 12],
+      "optional_modules": [7, 11],
+      "avoid": "纯白底产品拼图；缺乏穿戴感"
+    },
+    "tools": {
+      "label_zh": "工具 / 五金 / 汽车",
+      "keywords": ["reliable", "strong", "practical", "professional", "heavy-duty"],
+      "palette": ["#101418", "#3b3f44", "#9aa2ab", "#1d3a6e"],
+      "accent": "#f08322",
+      "temperature": "cool",
+      "lighting": "high-contrast directional lighting with strong shadow and metallic highlights",
+      "scenes": ["garage", "workbench", "car interior", "outdoor repair", "tool wall", "in-use process"],
+      "ornaments": ["metal textures", "exploded structure", "load-bearing diagrams", "step-by-step usage", "comparison vs ordinary"],
+      "headline_directions": [
+        "Built to Handle the Job",
+        "Reliable Tools for Daily Work",
+        "Strong Design, Practical Use",
+        "Made for Tough Tasks"
+      ],
+      "must_do_modules": [1, 4, 7, 9, 10, 8, 12],
+      "optional_modules": [6, 5],
+      "avoid": "低端五金详情页；脏乱排版"
+    }
+  }
+}

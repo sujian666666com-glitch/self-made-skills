@@ -1,0 +1,271 @@
+{
+  "version": "2026-05-12",
+  "description": "Product-type narrative templates for Amazon A+ long-detail generation. These templates sit above category visual profiles and decide the selling-story structure.",
+  "templates": {
+    "pet-travel-hydration": {
+      "label": "Pet travel hydration bottle",
+      "category": "pet",
+      "trigger_keywords": [
+        "pet water bottle",
+        "dog water bottle",
+        "portable pet water",
+        "one-button water",
+        "one hand",
+        "water return",
+        "leak",
+        "walking",
+        "hiking",
+        "travel",
+        "camping",
+        "550ml"
+      ],
+      "narrative_core": "Outdoor thirst solved in one hand: dispense water, let pets drink, return unused water, and carry without leaks.",
+      "shopper_tension": "Pet owners need fast hydration outdoors but do not want to carry a separate bowl, waste water, or risk leaks in a bag or car.",
+      "visual_principles": [
+        "Each section must have a distinct selling job and a different visual composition.",
+        "Do not repeat one generic pet lifestyle scene across all sections.",
+        "Prefer action moments, mechanism close-ups, and before-after problem framing over flat specification cards.",
+        "Keep exact specs for the rational confirmation section; use earlier sections to dramatize use and benefit."
+      ],
+      "profiles": {
+        "a-plus-lite-8": [
+          {
+            "id": "outdoor-thirst-hero",
+            "module": 1,
+            "goal": "户外口渴冲突首屏",
+            "frame_objective": "Open with the outdoor thirst problem and the product as the immediate one-hand solution.",
+            "prompt_focus": "dynamic outdoor walking or trail moment, pet clearly thirsty or pausing for water, owner holding beige portable bottle as the hero object, strong Amazon A+ hero composition",
+            "story_role": "problem-solution opener",
+            "shopper_tension": "Pets get thirsty outdoors and owners need water immediately without carrying a separate bowl.",
+            "visual_moment": "A small or medium dog pauses on a walk or trail while the owner raises the portable water bottle ready to dispense.",
+            "must_show": [
+              "visible beige bottle",
+              "outdoor walking or trail context",
+              "pet ready to drink",
+              "one clear hero headline area"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Hydration Anywhere",
+              "headline_localized": null,
+              "support_labels": [
+                "550mL",
+                "One-hand ready",
+                "For walks & trips"
+              ],
+              "proof_line": "Portable water for dogs and cats",
+              "cta": "soft CTA"
+            },
+            "transition_in": "首屏直接建立户外补水问题",
+            "transition_out": "底部保留干净户外光影背景，承接一键出水动作"
+          },
+          {
+            "id": "one-hand-dispense",
+            "module": 2,
+            "goal": "一键出水动作特写",
+            "frame_objective": "Show the one-button, one-hand dispense action as the main functional benefit.",
+            "prompt_focus": "macro action shot of thumb pressing the button, water flowing into the drinking cup trough, pet muzzle nearby but not covering the product",
+            "story_role": "core action proof",
+            "shopper_tension": "Owners need to give water quickly while holding a leash or bag.",
+            "visual_moment": "Close-up of a hand pressing the button with water visibly filling the cup trough.",
+            "must_show": [
+              "thumb pressing button",
+              "visible water flow",
+              "integrated drinking cup trough",
+              "single-hand operation"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Press. Pour. Drink.",
+              "headline_localized": null,
+              "support_labels": [
+                "One-button flow",
+                "Single-hand use",
+                "Fast outdoor drink"
+              ],
+              "proof_line": "Designed for quick pet hydration",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接户外场景背景",
+            "transition_out": "底部保留浅色产品特写背景，承接回流水路"
+          },
+          {
+            "id": "water-return",
+            "module": 3,
+            "goal": "未饮用水回流机制",
+            "frame_objective": "Explain the unused-water return mechanism as the standout differentiator.",
+            "prompt_focus": "split action diagram or clean mechanism cutaway showing water dispensed into trough and unused water returning to bottle, arrows only inside the middle safe area",
+            "story_role": "differentiator mechanism",
+            "shopper_tension": "Outdoor water is limited, and leftover water should not be wasted.",
+            "visual_moment": "Two-step visual: water out to drink, leftover water back into the bottle.",
+            "must_show": [
+              "dispense direction",
+              "return direction",
+              "clean water path concept",
+              "no waste message"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Return Unused Water",
+              "headline_localized": null,
+              "support_labels": [
+                "Drink what they need",
+                "Send the rest back",
+                "Less waste outdoors"
+              ],
+              "proof_line": "Unused water return design",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接按键出水特写",
+            "transition_out": "底部保留干净浅色功能图背景，承接防漏携带"
+          },
+          {
+            "id": "leak-lock-travel",
+            "module": 4,
+            "goal": "防漏锁扣与出行携带",
+            "frame_objective": "Address the bag/car leak anxiety with the lock and seal structure.",
+            "prompt_focus": "travel bag or car cup holder scene, bottle closed with lock emphasized, subtle seal-ring callout, premium practical travel layout",
+            "story_role": "risk reversal",
+            "shopper_tension": "Owners worry water bottles may leak inside bags, cars, or camping gear.",
+            "visual_moment": "Closed bottle placed in a backpack side pocket or car cup holder with lock detail highlighted.",
+            "must_show": [
+              "closed bottle",
+              "lock detail",
+              "silicone seal cue",
+              "bag or car travel context"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Lock It. Pack It.",
+              "headline_localized": null,
+              "support_labels": [
+                "Leak-lock design",
+                "Silicone seal",
+                "Travel ready"
+              ],
+              "proof_line": "Lock and seal structure",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接功能图浅色背景",
+            "transition_out": "底部保留车载或背包场景背景，承接容量场景"
+          },
+          {
+            "id": "capacity-outings",
+            "module": 5,
+            "goal": "550mL 与真实出行场景绑定",
+            "frame_objective": "Connect 550mL capacity to real walking, hiking, camping, travel, and car outing use.",
+            "prompt_focus": "multi-scenario strip or map-like outdoor day layout showing walk, hike, camping, road trip with the same bottle as anchor",
+            "story_role": "scenario expansion",
+            "shopper_tension": "Owners need enough water for short outdoor outings without carrying bulky gear.",
+            "visual_moment": "The bottle appears as the consistent anchor across walking, hiking, camping, and car travel scenes.",
+            "must_show": [
+              "550mL capacity callout",
+              "walking",
+              "hiking or camping",
+              "car travel"
+            ],
+            "image_copy_gate": {
+              "headline_en": "550mL for Real Outings",
+              "headline_localized": null,
+              "support_labels": [
+                "Walks",
+                "Hikes",
+                "Road trips",
+                "Camping"
+              ],
+              "proof_line": "550mL capacity",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接出行场景",
+            "transition_out": "底部保留温暖户外背景，承接宠物适配"
+          },
+          {
+            "id": "pet-fit",
+            "module": 6,
+            "goal": "小型犬、中型犬、猫适用",
+            "frame_objective": "Show the drinking trough and use height fitting small dogs, medium dogs, and cats.",
+            "prompt_focus": "three-pet fit composition: small dog, medium dog, cat, all interacting with or near the bottle in separate clean panels",
+            "story_role": "fit reassurance",
+            "shopper_tension": "Shoppers need confidence that the cup shape works for their pet size.",
+            "visual_moment": "Small dog, medium dog, and cat each shown with the cup trough in a clean comparison layout.",
+            "must_show": [
+              "small dog",
+              "medium dog",
+              "cat",
+              "drinking trough shape"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Made for Dogs & Cats",
+              "headline_localized": null,
+              "support_labels": [
+                "Small dogs",
+                "Medium dogs",
+                "Cats"
+              ],
+              "proof_line": "Suitable for small dogs, medium dogs, and cats",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接户外温暖背景",
+            "transition_out": "底部保留浅色宠物适配背景，承接规格确认"
+          },
+          {
+            "id": "materials-size",
+            "module": 7,
+            "goal": "材质尺寸规格确认",
+            "frame_objective": "Provide rational confirmation with material, size, weight, and package facts.",
+            "prompt_focus": "clean product specification layout, bottle silhouette with dimension marks, material stack PC body ABS lid silicone seal, concise table for size and weight",
+            "story_role": "rational confirmation",
+            "shopper_tension": "After the benefit story, shoppers need exact material and size checks before buying.",
+            "visual_moment": "Product silhouette with dimension lines and a premium spec table.",
+            "must_show": [
+              "PC bottle body",
+              "ABS cup lid",
+              "silicone sealing ring",
+              "21 x 7.5 x 7.5 cm",
+              "approx. 210g"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Built for Daily Carry",
+              "headline_localized": null,
+              "support_labels": [
+                "PC body",
+                "ABS lid",
+                "Silicone seal",
+                "Approx. 210g"
+              ],
+              "proof_line": "21 x 7.5 x 7.5 cm",
+              "cta": "omitted"
+            },
+            "transition_in": "顶部承接宠物适配背景",
+            "transition_out": "底部保留规格页浅色背景，承接出行套装收尾"
+          },
+          {
+            "id": "ready-to-go-kit",
+            "module": 8,
+            "goal": "出行套装收尾",
+            "frame_objective": "Close with the ready-to-go kit: bottle, lanyard, compact package, and travel confidence.",
+            "prompt_focus": "final organized travel kit scene with bottle and lanyard, package-size cue, warm outdoor light, single concise closing headline",
+            "story_role": "purchase closure",
+            "shopper_tension": "Shoppers want a simple complete kit they can take out immediately.",
+            "visual_moment": "Bottle and lanyard arranged as a compact travel kit beside a leash or backpack.",
+            "must_show": [
+              "water bottle",
+              "lanyard",
+              "compact travel setup",
+              "premium closing composition"
+            ],
+            "image_copy_gate": {
+              "headline_en": "Ready for Every Walk",
+              "headline_localized": null,
+              "support_labels": [
+                "Bottle x1",
+                "Lanyard x1",
+                "Compact pack"
+              ],
+              "proof_line": "Package size 22 x 8 x 8 cm",
+              "cta": "soft CTA"
+            },
+            "transition_in": "顶部承接规格页浅色背景",
+            "transition_out": "图像收尾"
+          }
+        ]
+      }
+    }
+  }
+}

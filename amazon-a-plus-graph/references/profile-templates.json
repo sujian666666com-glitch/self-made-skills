@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "description": "Amazon A+ 长图 profile 模板。脚本按 --profile 加载并写入 detail-plan.json 的 sections 字段。每段 id 在 profile 内唯一，frame_objective 与 prompt_focus 作为默认值，agent 可在 detail-plan.json 中覆盖。",
+  "profiles": {
+    "a-plus-standard-12": {
+      "label": "Amazon A+ standard 12 modules",
+      "section_height": 560,
+      "transition_overlap_px": 96,
+      "sections": [
+        {
+          "id": "hero",
+          "module": 1,
+          "goal": "Hero 首屏：1 秒内建立品类识别、品牌感与主购买理由",
+          "frame_objective": "Hero advertising banner that establishes brand and primary selling reason within 1 second",
+          "prompt_focus": "large product visual occupying 40-60% of canvas, bold benefit headline, brand logo, premium category background",
+          "transition_in": "首屏直接奠定视觉基调，无需承接",
+          "transition_out": "底部 15% 预留可延展背景与装饰元素，承接核心卖点段",
+          "shared_elements": ["品牌色带", "细线装饰", "柔和品牌纹理"]
+        },
+        {
+          "id": "core-benefits",
+          "module": 2,
+          "goal": "核心卖点 Icon 卡片：3-5 个利益型卖点",
+          "frame_objective": "Communicate 3-5 user benefits with icon cards",
+          "prompt_focus": "rounded info cards with consistent icons, benefit titles ≤ 4 words and explanations ≤ 12 words, optional small product accents",
+          "transition_in": "顶部承接 Hero 的色板与纹理，色相平滑过渡",
+          "transition_out": "底部 15% 预留卡片色块或细线装饰，承接产品单体展示",
+          "shared_elements": ["统一圆角卡片", "线性图标", "品牌色块"]
+        },
+        {
+          "id": "product-showcase",
+          "module": 3,
+          "goal": "产品单体高级展示，提升信任",
+          "frame_objective": "Showcase the product itself with clean premium styling and minimal labels",
+          "prompt_focus": "single product hero shot with clean background, soft shadows, 2-3 short labels and a brand-tone slogan",
+          "transition_in": "顶部承接卖点卡片色块，过渡到展示背景",
+          "transition_out": "底部 15% 预留产品阴影或纹理，承接拆解段",
+          "shared_elements": ["柔和阴影", "品牌 slogan 区", "极简标签"]
+        },
+        {
+          "id": "feature-breakdown",
+          "module": 4,
+          "goal": "功能 / 成分 / 结构拆解",
+          "frame_objective": "Explain why the product is better with annotated close-ups",
+          "prompt_focus": "product close-ups with refined callout lines, ≤ 5 annotation points, optional exploded or cross-section view",
+          "transition_in": "顶部承接展示段背景，过渡到拆解视角",
+          "transition_out": "底部 15% 预留功能图标或线稿，承接使用步骤",
+          "shared_elements": ["细线标注", "半透明信息卡", "功能图标"]
+        },
+        {
+          "id": "how-to-use",
+          "module": 5,
+          "goal": "使用步骤，降低理解成本",
+          "frame_objective": "Walk through 3-4 simple usage steps",
+          "prompt_focus": "step-by-step layout with numbered cards 01/02/03/04, real-life small photos, image-to-text ratio 7:3",
+          "transition_in": "顶部承接拆解段图标系统",
+          "transition_out": "底部 15% 预留生活化场景过渡，承接 lifestyle 段",
+          "shared_elements": ["数字编号", "圆角卡片", "细线分隔"]
+        },
+        {
+          "id": "lifestyle",
+          "module": 6,
+          "goal": "真实生活方式场景，建立代入感",
+          "frame_objective": "Show the product in real human/pet/home/outdoor usage",
+          "prompt_focus": "authentic lifestyle scene with visible product, natural emotion, clean background, one emotional headline",
+          "transition_in": "顶部承接步骤段的色板",
+          "transition_out": "底部 15% 预留场景余韵或装饰，承接性能可视化",
+          "shared_elements": ["真实人物 / 宠物 / 场景", "品牌色融合", "情绪型标题"]
+        },
+        {
+          "id": "performance-viz",
+          "module": 7,
+          "goal": "性能 / 功效可视化",
+          "frame_objective": "Translate abstract advantages into visual evidence",
+          "prompt_focus": "simple bar / curve / progress / before-after / icon-ring visualization, conceptual data only when not user-supplied",
+          "transition_in": "顶部承接生活方式段色板",
+          "transition_out": "底部 15% 预留对比线索，承接 Why-Us 段",
+          "shared_elements": ["简洁图表", "对比条", "数据标签"]
+        },
+        {
+          "id": "why-us",
+          "module": 8,
+          "goal": "Why Choose Us 对比，建立购买理由",
+          "frame_objective": "Show this product vs ordinary product, generic comparison only",
+          "prompt_focus": "compact comparison block ≤ 5 rows or 4 reasons-to-choose-us cards, highlight ours visually",
+          "transition_in": "顶部承接性能可视化背景",
+          "transition_out": "底部 15% 预留过渡到规格段",
+          "shared_elements": ["对比表", "勾叉图标", "本品强调色块"]
+        },
+        {
+          "id": "specs",
+          "module": 9,
+          "goal": "规格 / 参数 / 成分 / 营养表",
+          "frame_objective": "Final rational confirmation with category-appropriate specs",
+          "prompt_focus": "left product/package image + right specs/nutrition/supplement-facts/size-guide table, clean readable typography",
+          "transition_in": "顶部承接 Why-Us 段，进入理性确认氛围",
+          "transition_out": "底部 15% 预留过渡到包装展示",
+          "shared_elements": ["表格栅格", "极简标签", "品牌色细节"]
+        },
+        {
+          "id": "package-bundle",
+          "module": 10,
+          "goal": "包装 / 配件 / 套装展示",
+          "frame_objective": "Show what the buyer actually receives",
+          "prompt_focus": "neatly arranged package and accessories with consistent perspective, clear package text, no clutter",
+          "transition_in": "顶部承接规格段背景",
+          "transition_out": "底部 15% 预留信任元素或品牌符号",
+          "shared_elements": ["统一透视", "配件标签", "包装质感"]
+        },
+        {
+          "id": "trust",
+          "module": 11,
+          "goal": "用户评价 / 信任背书（按 Review Switch 处理）",
+          "frame_objective": "Reinforce trust with reviews, brand promise, or quality icons",
+          "prompt_focus": "review-style cards with stars and avatars OR brand promise iconography; never fabricate platform marks",
+          "transition_in": "顶部承接包装段质感",
+          "transition_out": "底部 15% 预留品牌色或情绪过渡",
+          "shared_elements": ["评价卡片或品牌承诺图标", "微妙星级 / 勾选", "柔和背景"]
+        },
+        {
+          "id": "closing",
+          "module": 12,
+          "goal": "Closing 情绪收尾，强化品牌记忆",
+          "frame_objective": "Final emotional closing with one strong headline only",
+          "prompt_focus": "final hero-like product shot with lifestyle background, brand logo, single emotional headline, optional minimal CTA",
+          "transition_in": "顶部承接信任段，过渡到品牌氛围",
+          "transition_out": "图像收尾，无需为后续段预留",
+          "shared_elements": ["品牌 Logo", "情绪型标题", "极简 CTA"]
+        }
+      ]
+    },
+    "a-plus-lite-8": {
+      "label": "Amazon A+ lite 8 modules",
+      "section_height": 620,
+      "transition_overlap_px": 96,
+      "sections": [
+        {
+          "id": "hero",
+          "module": 1,
+          "goal": "Hero 首屏",
+          "frame_objective": "Hero advertising banner",
+          "prompt_focus": "large product visual, bold benefit headline, brand logo, premium category background",
+          "transition_in": "首屏直接奠定视觉基调",
+          "transition_out": "底部 15% 预留可延展背景，承接卖点段",
+          "shared_elements": ["品牌色带", "细线装饰"]
+        },
+        {
+          "id": "core-benefits",
+          "module": 2,
+          "goal": "核心卖点 Icon 卡片",
+          "frame_objective": "Communicate 3-5 user benefits with icon cards",
+          "prompt_focus": "rounded info cards with consistent icons, short benefit titles and concise explanations",
+          "transition_in": "顶部承接 Hero",
+          "transition_out": "底部 15% 预留卡片色块，承接拆解段",
+          "shared_elements": ["统一圆角卡片", "线性图标"]
+        },
+        {
+          "id": "feature-breakdown",
+          "module": 4,
+          "goal": "功能 / 成分 / 结构拆解",
+          "frame_objective": "Annotated close-ups explaining why it is better",
+          "prompt_focus": "close-up product views with refined callout lines, ≤ 5 annotation points",
+          "transition_in": "顶部承接卖点段图标",
+          "transition_out": "底部 15% 预留装饰，承接步骤",
+          "shared_elements": ["细线标注", "半透明信息卡"]
+        },
+        {
+          "id": "how-to-use",
+          "module": 5,
+          "goal": "使用步骤",
+          "frame_objective": "Walk through 3-4 simple usage steps",
+          "prompt_focus": "numbered step layout 01/02/03/04 with real small photos",
+          "transition_in": "顶部承接拆解段",
+          "transition_out": "底部 15% 预留过渡到生活方式",
+          "shared_elements": ["数字编号", "圆角卡片"]
+        },
+        {
+          "id": "lifestyle",
+          "module": 6,
+          "goal": "真实生活方式场景",
+          "frame_objective": "Show product in real usage scene",
+          "prompt_focus": "authentic lifestyle scene with visible product and emotional headline",
+          "transition_in": "顶部承接步骤段",
+          "transition_out": "底部 15% 预留过渡到 Why-Us",
+          "shared_elements": ["真实场景", "品牌色融合"]
+        },
+        {
+          "id": "why-us",
+          "module": 8,
+          "goal": "Why Choose Us 对比",
+          "frame_objective": "Generic comparison highlighting our advantages",
+          "prompt_focus": "≤ 5 row comparison or 4 reasons-to-choose cards, visually highlight ours",
+          "transition_in": "顶部承接生活方式段",
+          "transition_out": "底部 15% 预留过渡到规格表",
+          "shared_elements": ["对比表", "勾叉图标"]
+        },
+        {
+          "id": "specs",
+          "module": 9,
+          "goal": "规格 / 成分 / 营养表",
+          "frame_objective": "Rational confirmation with specs / nutrition table",
+          "prompt_focus": "product or package on the left, table on the right, clean typography",
+          "transition_in": "顶部承接 Why-Us 段",
+          "transition_out": "底部 15% 预留过渡到品牌收尾",
+          "shared_elements": ["表格栅格", "极简标签"]
+        },
+        {
+          "id": "closing",
+          "module": 12,
+          "goal": "Closing 情绪收尾",
+          "frame_objective": "Final emotional closing with one strong headline",
+          "prompt_focus": "final hero-like shot with lifestyle background, brand logo, single emotional headline",
+          "transition_in": "顶部承接规格段，进入品牌氛围",
+          "transition_out": "图像收尾",
+          "shared_elements": ["品牌 Logo", "情绪型标题"]
+        }
+      ]
+    },
+    "legacy-long-7": {
+      "label": "Legacy 7-section ecommerce long detail",
+      "section_height": 620,
+      "transition_overlap_px": 96,
+      "sections": [
+        {
+          "id": "hero",
+          "module": 1,
+          "goal": "首屏展示商品系列、品牌识别和核心利益点",
+          "frame_objective": "Brand-led hero banner",
+          "prompt_focus": "large product visual, brand identity, core benefit headline",
+          "transition_in": "首屏直接奠定视觉基调",
+          "transition_out": "底部 15% 预留可延展背景，承接卖点段",
+          "shared_elements": ["品牌色带", "细线装饰", "柔和纸纹"]
+        },
+        {
+          "id": "selling-points",
+          "module": 2,
+          "goal": "核心卖点矩阵，使用卡片或图标组合",
+          "frame_objective": "3-5 benefit cards with icons",
+          "prompt_focus": "rounded info cards with consistent icons and short copy",
+          "transition_in": "顶部承接 Hero",
+          "transition_out": "底部 15% 预留卡片色块，承接品质故事",
+          "shared_elements": ["统一圆角卡片", "线性图标"]
+        },
+        {
+          "id": "quality-story",
+          "module": 11,
+          "goal": "品质、来源、工艺或可信证据",
+          "frame_objective": "Trust-leaning quality / origin / craftsmanship narrative",
+          "prompt_focus": "quality story imagery with material macros, origin shots, or process visuals",
+          "transition_in": "顶部承接卖点段",
+          "transition_out": "底部 15% 预留过渡到产品特写",
+          "shared_elements": ["品质细节", "原料 / 工艺意象"]
+        },
+        {
+          "id": "product-focus",
+          "module": 3,
+          "goal": "单品特写和关键卖点",
+          "frame_objective": "Single product premium showcase",
+          "prompt_focus": "single product hero shot with soft shadows and 2-3 short labels",
+          "transition_in": "顶部承接品质故事",
+          "transition_out": "底部 15% 预留过渡到生活方式",
+          "shared_elements": ["柔和阴影", "极简标签"]
+        },
+        {
+          "id": "scenario-proof",
+          "module": 6,
+          "goal": "使用场景、产地、使用方式或用户收益",
+          "frame_objective": "Lifestyle / scenario coverage",
+          "prompt_focus": "real lifestyle scene or origin imagery showing product use",
+          "transition_in": "顶部承接产品特写",
+          "transition_out": "底部 15% 预留过渡到规格表",
+          "shared_elements": ["真实场景", "品牌色融合"]
+        },
+        {
+          "id": "spec-table",
+          "module": 9,
+          "goal": "规格、成分、参数或购买前确认，只写已确认事实",
+          "frame_objective": "Specs / nutrition / supplement / size guide table",
+          "prompt_focus": "left product/package + right specs table with clean typography",
+          "transition_in": "顶部承接生活方式",
+          "transition_out": "底部 15% 预留过渡到品牌收尾",
+          "shared_elements": ["表格栅格", "极简标签"]
+        },
+        {
+          "id": "footer",
+          "module": 12,
+          "goal": "品牌收尾和信任感，不写强促销话术",
+          "frame_objective": "Brand closing with one final headline",
+          "prompt_focus": "final brand-tone closing with product and lifestyle background, single headline",
+          "transition_in": "顶部承接规格表",
+          "transition_out": "图像收尾",
+          "shared_elements": ["品牌 Logo", "情绪型标题"]
+        }
+      ]
+    },
+    "single-modules": {
+      "label": "Amazon Basic / Premium / Brand Story single modules",
+      "section_height": null,
+      "transition_overlap_px": 0,
+      "sections": [
+        {
+          "id": "basic-aplus",
+          "module": 0,
+          "goal": "Amazon Basic A+ 模块工作稿，970x300",
+          "frame_objective": "Basic A+ module image at 970x300",
+          "prompt_focus": "Basic A+ horizontal module with hero benefit and supporting visual at 970x300",
+          "transition_in": "独立模块",
+          "transition_out": "独立模块",
+          "shared_elements": ["品牌 Logo", "短标题"],
+          "size": "970x300"
+        },
+        {
+          "id": "premium-aplus",
+          "module": 0,
+          "goal": "Amazon Premium A+ 模块工作稿，1464x600",
+          "frame_objective": "Premium A+ module image at 1464x600",
+          "prompt_focus": "Premium A+ horizontal module at 1464x600 with strong product hero and editorial copy",
+          "transition_in": "独立模块",
+          "transition_out": "独立模块",
+          "shared_elements": ["品牌 Logo", "编辑级排版"],
+          "size": "1464x600"
+        },
+        {
+          "id": "brand-story",
+          "module": 0,
+          "goal": "Amazon Brand Story 卡片工作稿，1500x500",
+          "frame_objective": "Brand Story card at 1500x500",
+          "prompt_focus": "Brand Story card at 1500x500 with brand promise and category-aligned imagery",
+          "transition_in": "独立模块",
+          "transition_out": "独立模块",
+          "shared_elements": ["品牌 Logo", "品牌承诺"],
+          "size": "1500x500"
+        }
+      ]
+    }
+  }
+}

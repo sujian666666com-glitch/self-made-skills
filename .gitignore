@@ -1,0 +1,8 @@
+.DS_Store
+.writing/
+__pycache__/
+*.pyc
+.env
+
+# 全局 gitignore 默认忽略 *.json，本仓库需要保留 skill 的配置数据
+!*.json
